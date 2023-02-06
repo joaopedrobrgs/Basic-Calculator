@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body{
+    background-color: rgb(250, 250, 250);;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+#container{
+    background-color: rgb(250, 250, 250);
+    border: 1px solid rgb(220, 220, 220);
+    box-shadow: 0px 0.5px 0.5px 0.5px rgb(220, 220, 220);
+    width: 100%;
+    max-width: 300px;
+    /* text-align: center; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+h2{
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+#inputNumber{
+    width: 100%;
+    background-color: white;
+    border: 1px solid black;
+    height: 30px;
+    padding: 5px;
+    text-align: end;
+}
+
+#otherNumbers{
+    color: gray;
+    display: inline;
+}
+
+#operator{
+    color: gray;
+    display: inline;
+}
+
+button{
+    width: 22%;
+    line-height: 20px;
+    margin-top: 10px;
+    border: none;
+}
+
+/* button:hover{
+    background-color: rgb(190, 190, 190);
+} */
+
+.lighButton{
+    background-color: rgba(240, 240, 240, 0.2);
+    box-shadow: 0px 0.5px 0.5px 0.5px rgb(220, 220, 220);
+}
+
+.lighButton:hover{
+    background-color: rgb(240, 240, 240);
+}
+
+.darkButton{
+    background-color: rgba(220, 220, 220, 0.4);
+    box-shadow: 0px 0.5px 0.5px 0.5px rgb(200, 200, 200);
+}
+
+.darkButton:hover{
+    background-color: rgb(220, 220, 220);
+}
+
+#equal{
+    background-color: rgba(0, 100, 255, 0.3);
+    display: block;
+    width: calc(50% - 6px);
+    margin: auto;
+    margin-top: 10px;
+    box-shadow: 0px 0.5px 0.5px 0.5px rgba(0, 100, 255, 0.3);
+}
+
+#equal:hover{
+    background-color: rgba(0, 100, 255, 0.6);
+    box-shadow: 0px 0.5px 0.5px 0.5px rgba(0, 100, 255, 0.6);
+}
+
+#clean{
+    background-color: rgba(255, 0, 0, 0.3);
+    box-shadow: 0px 0.5px 0.5px 0.5px rgba(255, 0, 0, 0.3);
+}
+
+#clean:hover{
+    background-color: rgba(255, 0, 0, 0.6);
+    box-shadow: 0px 0.5px 0.5px 0.5px rgba(255, 0, 0, 0.6);
+}
+
+.number{
+    font-weight: 700;
+}
+
+#squareRoot{
+    position: relative;
+}
+
+#squareRoot::before{
+    content: "2";
+    font-size: 5px;
+    position: absolute;
+    top: -25%;
+    left: 45%
+}
+
+#power{
+    position: relative;
+}
+
+#power::after{
+    content: "x";
+    font-size: 7px;
+    position: absolute;
+    top: -20%;
+}
+
+.text-red{
+    color: red;
+}
