@@ -272,7 +272,8 @@ window.onload = function () {
     //BACKSPACE FUNCTION
     backSpace.addEventListener("click", backSpaceFunction);
     function backSpaceFunction() {
-        recentNumber.innerText = " ";
+        let newStr = recentNumber.innerText.slice(0, -1);
+        recentNumber.innerText = newStr;
     }
 
     //EQUAL FUNCTION
